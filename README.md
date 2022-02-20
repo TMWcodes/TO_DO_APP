@@ -66,3 +66,14 @@ rails g scaffold list description:string completed:boolean
 
       t.boolean :completed, default: false
       rails db:migrate
+
+      gem 'bootstrap', '~> 5.1.3'
+      @import "bootstrap"; to bootstraply.css.scss or application.css
+      made javascripts and application.js file added 
+    [require jquery3
+    require popper
+    require bootstrap-sprockets]
+
+    added class="container" to div surrounding yield
+
+    added rubocop gem and rspec --init
