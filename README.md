@@ -33,7 +33,7 @@ git remote add origin https://github.com/TMWcodes/TO_DO_APP.git
 Git push --set-upstream origin main
 git push -f origin main  
 
-rails g scaffold list description:string completed:boolean
+- rails g scaffold list description:string completed:boolean
       invoke  active_record
       create    db/migrate/20220220132130_create_lists.rb
       create    app/models/list.rb
@@ -64,10 +64,12 @@ rails g scaffold list description:string completed:boolean
       create      app/views/lists/show.json.jbuilder
       create      app/views/lists/_list.json.jbuilder
 
-      t.boolean :completed, default: false
+t.boolean :completed, default: false #make boolean false by default.
+      
       rails db:migrate
 
-      gem 'bootstrap', '~> 5.1.3'
+**bootstrap 
+gem 'bootstrap', '~> 5.1.3'
       @import "bootstrap"; to bootstraply.css.scss or application.css
       made javascripts and application.js file added 
     [require jquery3
@@ -77,3 +79,22 @@ rails g scaffold list description:string completed:boolean
     added class="container" to div surrounding yield
 
     added rubocop gem and rspec --init
+    added rspec rails
+    added simplecov
+ 
+
+**changed database to postgres
+update postgresql_adapter 
+
+config - database.yml 
+
+bin/rails db:create
+Created database 'mydb_development'
+Created database 'mydb_test'
+
+== 20220227132631 CreateLists: migrating ======================================
+-- create_table(:lists)
+   -> 0.0112s
+== 20220227132631 CreateLists: migrated (0.0112s) =============================
+
+if conflict use 'rake db:reset'
