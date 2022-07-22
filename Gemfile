@@ -28,8 +28,10 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-#css styling
-gem 'bootstrap', '~> 5.1.3'
+# #css styling
+# gem 'bootstrap', '~> 5.1.3'
+# bootstrap
+gem 'bootstrap', '~> 5.2'
 
 gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
@@ -45,6 +47,8 @@ gem 'jquery-rails'
 gem 'tzinfo-data', '>= 1.2021.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+
 
 # Use Sass to process CSS
 # gem "sassc-rails"
