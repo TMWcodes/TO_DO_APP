@@ -2,6 +2,8 @@
 
 An app that can manage tasks.
 
+![images](./app/assets/images/to_do_list.png)
+
 **README checklist:**
 
 1. Necessary steps to get the application up and running.
